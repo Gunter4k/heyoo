@@ -79,11 +79,11 @@ class WhatsApp(object):
         return response.json()
 
     async def send_reaction(self, emoji, message_id, recipient_id, recipient_type="individual"):
-        """
+        r"""
         Sends a reaction message to a WhatsApp user's message asynchronously.
 
         Args:
-            emoji (str): Emoji to become a reaction to a message. Ex.: '\uD83D\uDE00' (😀)
+            emoji (str): Emoji to become a reaction to a message. Ex.: '\uD83D\uDE00'
             message_id (str): Message id for a reaction to be attached to
             recipient_id (str): Phone number of the user with country code without +
             recipient_type (str): Type of the recipient, either individual or group
